@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Yuan Zeng</title>
 
@@ -9,126 +10,154 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/list-groups/">
     <!-- 引入样式 -->
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-	<!-- 引入组件库 -->
+    <!-- 引入组件库 -->
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Styles -->
     <style>
-	.bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-	    #head_icon {
-	 	    display: block;
-		    background-color: #f4f4f4;
-		    border-radius: 50% !important;
-		    overflow: hidden;
-		    position: relative;
-	 }
-          body {
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+        
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+        
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+        
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+        
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        #head_icon {
+            display: block;
+            background-color: #f4f4f4;
+            border-radius: 50% !important;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        body {
             font-family: 'sans-serif';
             font-size: 16px;
             background-color: #FFFFFF;
             color: #4F6071;
-          }
-          #header {
+        }
+        
+        #header {
             background-color: #f4f4f4;
-	    opacity: 75%;
+            opacity: 75%;
             display: flex;
             align-items: flex-end;
-            padding-top:60px;
-            padding-bottom:60px;
-          }
-          #footer {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        
+        #footer {
             background-color: #FFFFFF;
-            padding:60px;
-          }
-          #portrait {
+            padding: 60px;
+        }
+        
+        #portrait {
             border: 3px solid white;
-          }
-          #header-text {
+        }
+        
+        #header-text {
             margin-top: 60px;
             margin-left: 220px;
-          }
-          #header-text-name {
+        }
+        
+        #header-text-name {
             font-size: 45px;
-          }
-          #header-text-email {
+        }
+        
+        #header-text-email {
             font-size: 20px;
             font-style: italic;
-          }
-          .header-text-desc {
+        }
+        
+        .header-text-desc {
             font-size: 20px;
-          }
-          .vspace-top {
+        }
+        
+        .vspace-top {
             margin-top: 30px;
-          }
-          .vspace-top-news {
-              margin-top: 15px;
-          }
-          .paper-image {
+        }
+        
+        .vspace-top-news {
+            margin-top: 15px;
+        }
+        
+        .paper-image {
             width: 150px;
-          }
-          .news-date {
-              font-weight: bold;
-          }
-          .paper-title {
+        }
+        
+        .news-date {
             font-weight: bold;
-          }
-          .paper-authors {
+        }
+        
+        .paper-title {
+            font-weight: bold;
+        }
+        
+        .paper-authors {
             font-style: italic;
-          }
-          .content-style{
-		  background-color： #f3f3f3
-	  }
+        }
+        
+        .content-style {
+            background-color: #f3f3f3
+        }
+        
+        .text {
+            font-size: 14px;
+        }
+        
+        .item {
+            padding: 18px 0;
+        }
+        
+        .box-card {
+            width: 480px;
+        }
     </style>
 </head>
 
@@ -136,22 +165,23 @@
     <div id='header'>
         <div class='container'>
             <div class='row'>
-                <div class="col-sm-2 offset-sm-1" >
+                <div class="col-sm-2 offset-sm-1">
                     <img id="head_icon" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=9JIiC2EAAAAJ&citpid=2" class='img-fluid'>
                 </div>
 
                 <div class="col">
-                  <div id='header-text-name'>
-                      Yuan Zeng
-                  </div>
-                  <div id='header-text-email'>
+                    <div id='header-text-name'>
+                        Yuan Zeng
+                    </div>
+                    <div id='header-text-email'>
                         zengy3@sustech.edu.cn
-                  </div>
-                  <div>
-                    <a href="https://github.com/mldemox">[GitHub]</a>
-                    <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra">[Google Scholar]</a>
-		    <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[HomePage]</a>
-                  </div>
+                    </div>
+                    <div>
+                        <a href="https://github.com/mldemox">[GitHub]</a>
+                        <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra">[Google
+                            Scholar]</a>
+                        <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[HomePage]</a>
+                    </div>
 
                 </div>
             </div>
@@ -163,94 +193,73 @@
         <div class='row vspace-top'>
             <div class='col offset-sm-1'>
                 <h2>Self-Introduction</h2>
-		<el-card class="box-card">
-	  <div class="text item">
-		I'm a research assistant professor at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology.</a> 	
-		In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern Polytechnical University.</a> 
-		In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> 
-		From 2015 to 2018, I worked as a researcher in machine learning and image restoration in Delft University of Technology. 
-		Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science and Technology.
-		and is committed to solving practical problems by combining traditional signal processing methods and machine learning methods.
-	  </div>
-	</el-card>
-	
-	<style>
-	  .text {
-	    font-size: 14px;
-	  }
-	
-	  .item {
-	    padding: 18px 0;
-	  }
-	
-	  .box-card {
-	    width: 480px;
-	  }
-	</style>
-		<div>
-                I'm a research assistant professor at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology.</a> 	
-		In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern Polytechnical University.</a> 
-		In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> 
-		From 2015 to 2018, I worked as a researcher in machine learning and image restoration in Delft University of Technology. 
-		Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science and Technology.
-		and is committed to solving practical problems by combining traditional signal processing methods and machine learning methods.
+                <el-card class="box-card">
+                    <div class="text item">
+                        I'm a research assistant professor at <a href="https://www.sustech.edu.cn/">Southern University
+                            of Science and Technology.</a> In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern
+                            Polytechnical University.</a> In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> From 2015 to 2018, I worked as a researcher in
+                        machine learning and image restoration in Delft University of Technology. Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science and Technology.
+                        and is committed to solving practical problems by combining traditional signal processing methods and machine learning methods.
+                    </div>
+                </el-card>
+
+                <el-collapse accordion>
+                    <el-collapse-item>
+                        <template slot="title">
+                            <h2>Self-Introduction</h2>
+                            <i class="header-icon el-icon-info"></i>
+                        </template>
+                        <el-card class="box-card">
+                            <div class="text item">
+                                I'm a research assistant professor at <a href="https://www.sustech.edu.cn/">Southern University
+                                    of Science and Technology.</a> In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern
+                                    Polytechnical University.</a> In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> From 2015 to 2018, I worked as a researcher
+                                in machine learning and image restoration in Delft University of Technology. Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science and
+                                Technology. and is committed to solving practical problems by combining traditional signal processing methods and machine learning methods.
+                            </div>
+                        </el-card>
+                    </el-collapse-item>
+                    <el-collapse-item title="Work Experience">
+                        <div class='vspace-top'>
+                            <h2>Work Experience</h2>
+                            <p>2017.9-, Research assistant Professor, Department of Electronic and Electrical Engineering, Southern University of Science and Technology</p>
+                            <p>2015-2017 Postdoctoral Researcher, Department of Pattern Recognition and Machine Vision, Delft University of Technology, Netherlands. </p>
+                            <p>2016-2017 Visiting Researcher, Department of Artificial Intelligence, University of Tilburg, Netherlands
+                            </p>
+                        </div>
+                    </el-collapse-item>
+                    <el-collapse-item title="Research field">
+                        <div class='vspace-top'>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Intelligent signal estimation and enhancement</li>
+                                <li class="list-group-item">Intelligent signal detection and reconstruction</li>
+                                <li class="list-group-item">Machine Vision and Cultural Promotion</li>
+                                <li class="list-group-item">Front end signal processing system in Industrial internet of things
+                                </li>
+                            </ul>
+                        </div>
+                    </el-collapse-item>
+                </el-collapse>
+
+
+                <div class='vspace-top'>
+                    <h2>Work Experience</h2>
+                    <p>2017.9-, Research assistant Professor, Department of Electronic and Electrical Engineering, Southern University of Science and Technology</p>
+                    <p>2015-2017 Postdoctoral Researcher, Department of Pattern Recognition and Machine Vision, Delft University of Technology, Netherlands. </p>
+                    <p>2016-2017 Visiting Researcher, Department of Artificial Intelligence, University of Tilburg, Netherlands
+                    </p>
                 </div>
 
-		<div class="accordion" id="accordionExample">
-		  <div class="accordion-item">
-		    <h2 class="accordion-header" id="headingOne">
-		      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-		        Accordion Item #1
-		      </button>
-		    </h2>
-		    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-		      <div class="accordion-body">
-		        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-		      </div>
-		    </div>
-		  </div>
-		  <div class="accordion-item">
-		    <h2 class="accordion-header" id="headingTwo">
-		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		        Accordion Item #2
-		      </button>
-		    </h2>
-		    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-		      <div class="accordion-body">
-		        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-		      </div>
-		    </div>
-		  </div>
-		  <div class="accordion-item">
-		    <h2 class="accordion-header" id="headingThree">
-		      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-		        Accordion Item #3
-		      </button>
-		    </h2>
-		    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-		      <div class="accordion-body">
-		        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		    
-		<div class='vspace-top'>
-                    <h2>Work Experience</h2>
-			<p>2017.9-, Research assistant Professor, Department of Electronic and Electrical Engineering, Southern University of Science and Technology</p>
-			<p>2015-2017 Postdoctoral Researcher, Department of Pattern Recognition and Machine Vision, Delft University of Technology, Netherlands. </p>
-			<p>2016-2017 Visiting Researcher, Department of Artificial Intelligence, University of Tilburg, Netherlands</p>
-                </div>
-		
 
                 <div class='vspace-top'>
                     <h2>Research field</h2>
-			<ul class="list-group list-group-flush">
-			  <li class="list-group-item">Intelligent signal estimation and enhancement</li>
-			  <li class="list-group-item">Intelligent signal detection and reconstruction</li>
-			  <li class="list-group-item">Machine Vision and Cultural Promotion</li>
-			  <li class="list-group-item">Front end signal processing system in Industrial internet of things</li>
-			</ul>	
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Intelligent signal estimation and enhancement</li>
+                        <li class="list-group-item">Intelligent signal detection and reconstruction</li>
+                        <li class="list-group-item">Machine Vision and Cultural Promotion</li>
+                        <li class="list-group-item">Front end signal processing system in Industrial internet of things
+                        </li>
+                    </ul>
                 </div>
 
                 <div class='vspace-top'>
@@ -267,7 +276,7 @@
                             Factor Fields: A Unified Framework for Neural Fields and Beyond
                         </div>
                         <div class='paper-desc'>
-                             Arxiv
+                            Arxiv
                         </div>
                         <div class='paper-authors'>
                             <b>Anpei Chen</b>, Zexiang Xu, Xinyue Wei, Siyu Tang, Hao Su, Andreas Geiger
@@ -292,7 +301,7 @@
                             Dictionary Fields: Learning a Neural Basis Decomposition
                         </div>
                         <div class='paper-desc'>
-                             SIGGRAPH 2023 (Journal Track)
+                            SIGGRAPH 2023 (Journal Track)
                         </div>
                         <div class='paper-authors'>
                             <b>Anpei Chen</b>, Zexiang Xu, Xinyue Wei, Siyu Tang, Hao Su, Andreas Geiger
@@ -317,7 +326,7 @@
                             Single-Stage Diffusion NeRF: A Unified Approach to 3D Generation and Reconstruction
                         </div>
                         <div class='paper-desc'>
-                             ICCV 2023
+                            ICCV 2023
                         </div>
                         <div class='paper-authors'>
                             Hansheng Chen, Jiatao Gu, <b>Anpei Chen</b>, Wei Tian, Zhuowen Tu, Lingjie Liu, Hao Su
@@ -330,7 +339,7 @@
                     </div>
                 </div>
 
-               <div class='row vspace-top'>
+                <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <img src='imgs/SDFStudio.png' class='img-fluid'>
                     </div>
@@ -340,11 +349,10 @@
                             SDFStudio: A Unified Framework for Surface Reconstruction
                         </div>
                         <div class='paper-desc'>
-                             OpenSource Project
+                            OpenSource Project
                         </div>
                         <div class='paper-authors'>
-                             Zehao Yu, <b>Anpei Chen</b>, Bozidar Antic, Songyou Peng, Apratim Bhattacharyya,<br>
-                             Michael Niemeyer, Siyu Tang, Torsten Sattler, Andreas Geiger
+                            Zehao Yu, <b>Anpei Chen</b>, Bozidar Antic, Songyou Peng, Apratim Bhattacharyya,<br> Michael Niemeyer, Siyu Tang, Torsten Sattler, Andreas Geiger
                         </div>
                         <div>
                             <a href="https://autonomousvision.github.io/sdfstudio/">[Project page]</a>
@@ -367,10 +375,10 @@
                             NeRFPlayer: A Streamable Dynamic Scene Representation with Decomposed Neural Radiance Fields
                         </div>
                         <div class='paper-desc'>
-                             IEEE VR 2023 (TVCG Journal Track)
+                            IEEE VR 2023 (TVCG Journal Track)
                         </div>
                         <div class='paper-authors'>
-                             Liangchen Song, <b>Anpei Chen</b>, Zhong Li, Zhang Chen, Lele Chen, Junsong Yuan, Yi Xu, Andreas Geiger
+                            Liangchen Song, <b>Anpei Chen</b>, Zhong Li, Zhang Chen, Lele Chen, Junsong Yuan, Yi Xu, Andreas Geiger
                         </div>
                         <div>
                             <a href="https://lsongx.github.io/projects/nerfplayer.html">[Project page]</a>
@@ -393,10 +401,10 @@
                             TensoRF: Tensorial Radiance Fields
                         </div>
                         <div class='paper-desc'>
-			                 ECCV 2022 (final scores: 1, 1, 1)
+                            ECCV 2022 (final scores: 1, 1, 1)
                         </div>
                         <div class='paper-authors'>
-                             <b>Anpei Chen*</b>, Zexiang Xu*, Andreas Geiger, Jingyi Yu, Hao Su
+                            <b>Anpei Chen*</b>, Zexiang Xu*, Andreas Geiger, Jingyi Yu, Hao Su
                         </div>
                         <div>
                             <a href="https://apchenstu.github.io/TensoRF">[Project page]</a>
@@ -420,11 +428,11 @@
                             ICARUS: A Lightweight Neural Plenoptic Rendering Architecture
                         </div>
                         <div class='paper-desc'>
-                             Siggraph Asia 2022 (TOG Journal Track)
+                            Siggraph Asia 2022 (TOG Journal Track)
                         </div>
                         <div class='paper-authors'>
-                             Chaolin Rao, Huangjie Yu, Haochuan Wan, Jindong Zhou, Yueyang Zheng, Yu Ma, <br>
-                             <b>Anpei Chen</b>, Minye Wu, Binzhe Yuan, Pingqiang Zhou, Xin Lou, Jingyi Yu
+                            Chaolin Rao, Huangjie Yu, Haochuan Wan, Jindong Zhou, Yueyang Zheng, Yu Ma, <br>
+                            <b>Anpei Chen</b>, Minye Wu, Binzhe Yuan, Pingqiang Zhou, Xin Lou, Jingyi Yu
                         </div>
                         <div>
                             <a href="https://dl.acm.org/doi/abs/10.1145/3550454.3555505">[Paper]</a>
@@ -442,10 +450,10 @@
                             PREF: Phasorial Embedding Fields for Compact Neural Representation
                         </div>
                         <div class='paper-desc'>
-                             Arxiv
+                            Arxiv
                         </div>
                         <div class='paper-authors'>
-                             Binbin Huang, Xinhao Yan, <b>Anpei Chen</b>, Shenghua Gao, Jingyi Yu
+                            Binbin Huang, Xinhao Yan, <b>Anpei Chen</b>, Shenghua Gao, Jingyi Yu
                         </div>
                         <div>
                             <a href="https://arxiv.org/abs/2205.13524">[Paper]</a>
@@ -464,7 +472,7 @@
                             Anisotropic Fourier Features for Image-Based Rendering and Relighting
                         </div>
                         <div class='paper-desc'>
-			                 AAAI 2022 (Oral)
+                            AAAI 2022 (Oral)
                         </div>
                         <div class='paper-authors'>
                             Huangjie Yu, <b>Anpei Chen</b>, Xin Chen, Lan Xu, Ziyu Shao, Jingyi Yu
@@ -487,7 +495,7 @@
                             MVSNeRF: Fast Generalizable Radiance Field Reconstruction from Multi-View Stereo
                         </div>
                         <div class='paper-desc'>
-			                 ICCV 2021
+                            ICCV 2021
                         </div>
                         <div class='paper-authors'>
                             <b>Anpei Chen*</b>, Zexiang Xu*, Fuqiang Zhao, Xiaoshuai Zhang, Fanbo Xiang, Jingyi Yu, Hao Su
@@ -510,7 +518,7 @@
                             GNeRF: GAN-based Neural Radiance Field without Posed Camera
                         </div>
                         <div class='paper-desc'>
-                       ICCV 2021 (Oral)
+                            ICCV 2021 (Oral)
                         </div>
                         <div class='paper-authors'>
                             Quan Meng, <b>Anpei Chen</b>, Haimin Luo, Minye Wu, Hao Su, Lan Xu, Xuming He, Jingyi Yu
@@ -526,16 +534,16 @@
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="imgs/ConvNeRF.mp4" type="video/mp4">
+                            <source src="imgs/ConvNeRF.mp4" type="video/mp4">
                         </video>
                     </div>
-                    
+
                     <div class="col">
                         <div class='paper-title'>
                             ConvNeRF: Convolutional Neural Opacity Radiance Fields
                         </div>
                         <div class='paper-desc'>
-                       ICCP 2021
+                            ICCP 2021
                         </div>
                         <div class='paper-authors'>
                             Haimin Luo, <b>Anpei Chen</b>, Qixuan Zhang, Bai Pang, Minye Wu, Lan Xu, Jingyi Yu
@@ -545,29 +553,29 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                        <source src="imgs/sofgan.mp4" type="video/mp4">
+                            <source src="imgs/sofgan.mp4" type="video/mp4">
                         </video>
                     </div>
 
                     <div class="col">
-                      <div class='paper-title'>
-                          SofGAN: A Portrait Image Generator with Dynamic Styling
-                      </div>
-                      <div class='paper-desc'>
-                          TOG
-                      </div>
-                      <div class='paper-authors'>
-                          <b>Anpei Chen*</b>, Ruiyang Liu*, Ling Xie, Zhang Chen, Hao Su, Jingyi Yu
-                      </div>
-                      <div>
+                        <div class='paper-title'>
+                            SofGAN: A Portrait Image Generator with Dynamic Styling
+                        </div>
+                        <div class='paper-desc'>
+                            TOG
+                        </div>
+                        <div class='paper-authors'>
+                            <b>Anpei Chen*</b>, Ruiyang Liu*, Ling Xie, Zhang Chen, Hao Su, Jingyi Yu
+                        </div>
+                        <div>
                             <a href="https://apchenstu.github.io/sofgan">[Project page]</a>
                             <a href="https://arxiv.org/abs/2007.03780">[Paper]</a>
                             <a href="https://github.com/apchenstu/sofgan">[Code]</a>
-                      </div>
+                        </div>
                     </div>
                 </div>
 
@@ -579,19 +587,19 @@
                     </div>
 
                     <div class="col">
-                      <div class='paper-title'>
-                          A neural rendering framework for free-viewpoint relighting
-                      </div>
-                      <div class='paper-desc'>
-                          CVPR 2020
-                      </div>
-                      <div class='paper-authors'>
-                          Zhang Chen, <b>Anpei Chen</b>, Guli Zhang, Chengyuan Wang, Yu Ji, Kiriakos N Kutulakos, Jingyi Yu
-                      </div>
-                      <div>
+                        <div class='paper-title'>
+                            A neural rendering framework for free-viewpoint relighting
+                        </div>
+                        <div class='paper-desc'>
+                            CVPR 2020
+                        </div>
+                        <div class='paper-authors'>
+                            Zhang Chen, <b>Anpei Chen</b>, Guli Zhang, Chengyuan Wang, Yu Ji, Kiriakos N Kutulakos, Jingyi Yu
+                        </div>
+                        <div>
                             <a href="https://arxiv.org/abs/1911.11530">[Paper]</a>
                             <a href="https://github.com/LansburyCH/relightable-nr">[Code]</a>
-                      </div>
+                        </div>
                     </div>
                 </div>
 
@@ -601,20 +609,20 @@
                     </div>
 
                     <div class="col">
-                      <div class='paper-title'>
-                          Photo-Realistic Facial Details Synthesis from Single Image
-                      </div>
-                      <div class='paper-desc'>
-                          ICCV 2019 (Oral)
-                      </div>
-                      <div class='paper-authors'>
-                          <b>Anpei Chen</b>, Zhang Chen, Guli Zhang, Ziheng Zhang, Kenny Mitchell, Jingyi Yu
-                      </div>
-                      <div>
+                        <div class='paper-title'>
+                            Photo-Realistic Facial Details Synthesis from Single Image
+                        </div>
+                        <div class='paper-desc'>
+                            ICCV 2019 (Oral)
+                        </div>
+                        <div class='paper-authors'>
+                            <b>Anpei Chen</b>, Zhang Chen, Guli Zhang, Ziheng Zhang, Kenny Mitchell, Jingyi Yu
+                        </div>
+                        <div>
                             <a href="https://apchenstu.github.io/facial_details/">[Project page]</a>
                             <a href="https://arxiv.org/abs/1903.10873">[Paper]</a>
                             <a href="https://github.com/apchenstu/Facial_Details_Synthesis">[Code]</a>
-                      </div>
+                        </div>
                     </div>
                 </div>
 
@@ -627,18 +635,18 @@
 
 
                     <div class="col">
-                      <div class='paper-title'>
-                          Sparse photometric 3d face reconstruction guided by morphable models
-                      </div>
-                      <div class='paper-desc'>
-                          CVPR 2019
-                      </div>
-                      <div class='paper-authors'>
-                          Xuan Cao, Zhang Chen, <b>Anpei Chen</b>, Xin Chen, Shiying Li, Jingyi Yu
-                      </div>
-                      <div>
+                        <div class='paper-title'>
+                            Sparse photometric 3d face reconstruction guided by morphable models
+                        </div>
+                        <div class='paper-desc'>
+                            CVPR 2019
+                        </div>
+                        <div class='paper-authors'>
+                            Xuan Cao, Zhang Chen, <b>Anpei Chen</b>, Xin Chen, Shiying Li, Jingyi Yu
+                        </div>
+                        <div>
                             <a href="https://arxiv.org/abs/1711.10870">[Paper]</a>
-                      </div>
+                        </div>
                     </div>
                 </div>
 
@@ -648,62 +656,62 @@
                     </div>
 
                     <div class="col">
-                      <div class='paper-title'>
-                          Learning semantics-aware distance map with semantics layering network for amodal instance segmentation
-                      </div>
-                      <div class='paper-desc'>
-                          ACM MM 2019
-                      </div>
-                      <div class='paper-authors'>
-                          Ziheng Zhang*, <b>Anpei Chen*</b>, Ling Xie, Jingyi Yu, Shenghua Gao
-                      </div>
-                      <div>
+                        <div class='paper-title'>
+                            Learning semantics-aware distance map with semantics layering network for amodal instance segmentation
+                        </div>
+                        <div class='paper-desc'>
+                            ACM MM 2019
+                        </div>
+                        <div class='paper-authors'>
+                            Ziheng Zhang*, <b>Anpei Chen*</b>, Ling Xie, Jingyi Yu, Shenghua Gao
+                        </div>
+                        <div>
                             <a href="https://arxiv.org/abs/1905.12898">[Paper]</a>
                             <a href="https://github.com/apchenstu/SLN-Amodal">[Code]</a>
-                      </div>
+                        </div>
                     </div>
                 </div>
 
-               <div class='row vspace-top'>
+                <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <img src='imgs/refocusable.jpg' class='img-fluid'>
                     </div>
 
                     <div class="col">
-                      <div class='paper-title'>
-                          Refocusable Gigapixel Panoramas for Immersive VR Experiences
-                      </div>
-                      <div class='paper-desc'>
-                          TVCG 2019
-                      </div>
-                      <div class='paper-authors'>
-                          Wentao Lyu, Peng Ding, Yingliang Zhang, <b>Anpei Chen</b>, Minye Wu, Shu Yin, Jingyi Yu
-                      </div>
-                      <div>
+                        <div class='paper-title'>
+                            Refocusable Gigapixel Panoramas for Immersive VR Experiences
+                        </div>
+                        <div class='paper-desc'>
+                            TVCG 2019
+                        </div>
+                        <div class='paper-authors'>
+                            Wentao Lyu, Peng Ding, Yingliang Zhang, <b>Anpei Chen</b>, Minye Wu, Shu Yin, Jingyi Yu
+                        </div>
+                        <div>
                             <a href="https://ieeexplore.ieee.org/iel7/2945/4359476/08827949.pdf">[Paper]</a>
-                      </div>
+                        </div>
                     </div>
                 </div>
 
-               <div class='row vspace-top'>
+                <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <img src='imgs/dslf.png' class='img-fluid'>
                     </div>
 
                     <div class="col">
-                      <div class='paper-title'>
-                          Deep surface light fields
-                      </div>
-                      <div class='paper-desc'>
-                          I3D 2018
-                      </div>
-                      <div class='paper-authors'>
-                          <b>Anpei Chen</b>, Minye Wu, Yingliang Zhang, Nianyi Li, Jie Lu, Shenghua Gao, Jingyi Yu
-                      </div>
-                      <div>
+                        <div class='paper-title'>
+                            Deep surface light fields
+                        </div>
+                        <div class='paper-desc'>
+                            I3D 2018
+                        </div>
+                        <div class='paper-authors'>
+                            <b>Anpei Chen</b>, Minye Wu, Yingliang Zhang, Nianyi Li, Jie Lu, Shenghua Gao, Jingyi Yu
+                        </div>
+                        <div>
                             <a href="https://apchenstu.github.io/dslf">[Project page]</a>
                             <a href="https://arxiv.org/abs/1810.06514">[Paper]</a>
-                      </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -711,16 +719,13 @@
     </div>
 
 
-
-                
-
     <div id='footer' class='vspace-top'>
-    <div>
+        <div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
