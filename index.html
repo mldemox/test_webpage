@@ -188,63 +188,50 @@
         </div>
     </div>
 
-
+    <el-collapse accordion>
+        <el-collapse-item>
+            <template slot="title">
+                <h2>Self-Introduction</h2>
+                <i class="header-icon el-icon-info"></i>
+            </template>
+            <el-card class="box-card">
+                <div class="text item">
+                    I'm a research assistant professor at <a href="https://www.sustech.edu.cn/">Southern University
+                        of Science and Technology.</a> In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern
+                        Polytechnical University.</a> In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> From 2015 to 2018, I worked as a researcher in machine
+                    learning and image restoration in Delft University of Technology. Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science and Technology. and is committed
+                    to solving practical problems by combining traditional signal processing methods and machine learning methods.
+                </div>
+            </el-card>
+        </el-collapse-item>
+        <el-collapse-item title="Work Experience">
+            <div class='vspace-top'>
+                <h2>Work Experience</h2>
+                <p>2017.9-, Research assistant Professor, Department of Electronic and Electrical Engineering, Southern University of Science and Technology</p>
+                <p>2015-2017 Postdoctoral Researcher, Department of Pattern Recognition and Machine Vision, Delft University of Technology, Netherlands. </p>
+                <p>2016-2017 Visiting Researcher, Department of Artificial Intelligence, University of Tilburg, Netherlands
+                </p>
+            </div>
+        </el-collapse-item>
+        <el-collapse-item title="Research field">
+            <div class='vspace-top'>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Intelligent signal estimation and enhancement</li>
+                    <li class="list-group-item">Intelligent signal detection and reconstruction</li>
+                    <li class="list-group-item">Machine Vision and Cultural Promotion</li>
+                    <li class="list-group-item">Front end signal processing system in Industrial internet of things
+                    </li>
+                </ul>
+            </div>
+        </el-collapse-item>
+    </el-collapse>
     <div class='container'>
         <div class='row vspace-top'>
             <div class='col offset-sm-1'>
-                <h2>Self-Introduction</h2>
-                <el-card class="box-card">
-                    <div class="text item">
-                        I'm a research assistant professor at <a href="https://www.sustech.edu.cn/">Southern University
-                            of Science and Technology.</a> In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern
-                            Polytechnical University.</a> In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> From 2015 to 2018, I worked as a researcher in
-                        machine learning and image restoration in Delft University of Technology. Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science and Technology.
-                        and is committed to solving practical problems by combining traditional signal processing methods and machine learning methods.
-                    </div>
-                </el-card>
-
-                <el-collapse accordion>
-                    <el-collapse-item>
-                        <template slot="title">
-                            <h2>Self-Introduction</h2>
-                            <i class="header-icon el-icon-info"></i>
-                        </template>
-                        <el-card class="box-card">
-                            <div class="text item">
-                                I'm a research assistant professor at <a href="https://www.sustech.edu.cn/">Southern University
-                                    of Science and Technology.</a> In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern
-                                    Polytechnical University.</a> In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> From 2015 to 2018, I worked as a researcher
-                                in machine learning and image restoration in Delft University of Technology. Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science and
-                                Technology. and is committed to solving practical problems by combining traditional signal processing methods and machine learning methods.
-                            </div>
-                        </el-card>
-                    </el-collapse-item>
-                    <el-collapse-item title="Work Experience">
-                        <div class='vspace-top'>
-                            <h2>Work Experience</h2>
-                            <p>2017.9-, Research assistant Professor, Department of Electronic and Electrical Engineering, Southern University of Science and Technology</p>
-                            <p>2015-2017 Postdoctoral Researcher, Department of Pattern Recognition and Machine Vision, Delft University of Technology, Netherlands. </p>
-                            <p>2016-2017 Visiting Researcher, Department of Artificial Intelligence, University of Tilburg, Netherlands
-                            </p>
-                        </div>
-                    </el-collapse-item>
-                    <el-collapse-item title="Research field">
-                        <div class='vspace-top'>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Intelligent signal estimation and enhancement</li>
-                                <li class="list-group-item">Intelligent signal detection and reconstruction</li>
-                                <li class="list-group-item">Machine Vision and Cultural Promotion</li>
-                                <li class="list-group-item">Front end signal processing system in Industrial internet of things
-                                </li>
-                            </ul>
-                        </div>
-                    </el-collapse-item>
-                </el-collapse>
-
 
                 <div class='vspace-top'>
                     <h2>Work Experience</h2>
-                    <p>2017.9-, Research assistant Professor, Department of Electronic and Electrical Engineering, Southern University of Science and Technology</p>
+                    <p>2017.9- Research assistant Professor, Department of Electronic and Electrical Engineering, Southern University of Science and Technology</p>
                     <p>2015-2017 Postdoctoral Researcher, Department of Pattern Recognition and Machine Vision, Delft University of Technology, Netherlands. </p>
                     <p>2016-2017 Visiting Researcher, Department of Artificial Intelligence, University of Tilburg, Netherlands
                     </p>
@@ -264,6 +251,29 @@
 
                 <div class='vspace-top'>
                     <h2>Publications</h2>
+                </div>
+
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src='FactorFields/img/framework.png' class='img-fluid'>
+                        </div>
+                        <div class="col">
+                            <div class='paper-title'>
+                                Factor Fields: A Unified Framework for Neural Fields and Beyond
+                            </div>
+                            <div class='paper-desc'>
+                                Arxiv
+                            </div>
+                            <div class='paper-authors'>
+                                <b>Anpei Chen</b>, Zexiang Xu, Xinyue Wei, Siyu Tang, Hao Su, Andreas Geiger
+                            </div>
+                            <div>
+                                <a href="https://apchenstu.github.io/FactorFields/">[Project page]</a>
+                                <a href="https://arxiv.org/abs/2302.01226">[Paper]</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class='row vspace-top'>
@@ -714,6 +724,15 @@
                         </div>
                     </div>
                 </div>
+                <nav aria-label="...">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
