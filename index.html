@@ -18,8 +18,7 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
 
     <!-- Custom Styles -->
     <style>
@@ -175,6 +174,12 @@
         .box-card {
             width: 480px;
         }
+        
+        .self-intorduce,
+        .self-experience {
+            margin: 10px auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     </style>
 </head>
 
@@ -205,8 +210,20 @@
         </div>
     </div>
 
-    <div class='container'>
-        <div class='row vspace-top'>
+    <div class='container middle'>
+        <div class="self-introduce">
+            <div class='row vspace-top'>
+                <div class='col offset-sm-1'>
+                    <h2>Self-Introduction</h2>
+                    <div>
+                        I'm a research assistant professor at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology.</a> In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern Polytechnical University.</a>                        In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> From 2015 to 2018, I worked as a researcher in machine learning and image restoration
+                        in Delft University of Technology. Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science and Technology. and is committed to solving practical
+                        problems by combining traditional signal processing methods and machine learning methods.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="self-experience">
             <div class="vspace-top">
                 <div class="col-xs-10">
 
@@ -291,16 +308,9 @@
 
                 </div>
             </div>
+        </div>
 
-            <div class='vspace-top'>
-                <h2>Work Experience</h2>
-                <p>2017.9- Research assistant Professor, Department of Electronic and Electrical Engineering, Southern University of Science and Technology</p>
-                <p>2015-2017 Postdoctoral Researcher, Department of Pattern Recognition and Machine Vision, Delft University of Technology, Netherlands. </p>
-                <p>2016-2017 Visiting Researcher, Department of Artificial Intelligence, University of Tilburg, Netherlands
-                </p>
-            </div>
-
-
+        <div class="self-direction">
             <div class='vspace-top'>
                 <h2>Research field</h2>
                 <ul class="list-group list-group-flush">
@@ -311,7 +321,9 @@
                     </li>
                 </ul>
             </div>
+        </div>
 
+        <div class="self-publication">
             <div class='vspace-top'>
                 <h2>Publications</h2>
             </div>
@@ -360,8 +372,8 @@
             <div class='row vspace-top'>
                 <div class="col-sm-3">
                     <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/modulation.png" type="video/mp4">
-                        </video>
+                                <source src="imgs/modulation.png" type="video/mp4">
+                            </video>
                 </div>
 
                 <div class="col">
@@ -384,8 +396,8 @@
             <div class='row vspace-top'>
                 <div class="col-sm-3">
                     <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/scale_t.png" type="video/mp4">
-                        </video>
+                                <source src="imgs/scale_t.png" type="video/mp4">
+                            </video>
                 </div>
 
                 <div class="col">
@@ -428,8 +440,8 @@
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/learning_letter.png" type="video/mp4">
-                        </video>
+                                <source src="imgs/learning_letter.png" type="video/mp4">
+                            </video>
                     </div>
 
                     <div class="col">
@@ -449,8 +461,8 @@
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/tensorf.mp4" type="video/mp4">
-                        </video>
+                                <source src="imgs/tensorf.mp4" type="video/mp4">
+                            </video>
                     </div>
 
                     <div class="col">
@@ -528,8 +540,8 @@
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/mvsnerf2.mp4" type="video/mp4">
-                        </video>
+                                <source src="imgs/mvsnerf2.mp4" type="video/mp4">
+                            </video>
                     </div>
 
                     <div class="col">
@@ -571,8 +583,8 @@
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/spectrum.png" type="video/mp4">
-                        </video>
+                                <source src="imgs/spectrum.png" type="video/mp4">
+                            </video>
                     </div>
 
                     <div class="col">
@@ -592,8 +604,8 @@
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/neigbor.png" type="video/mp4">
-                        </video>
+                                <source src="imgs/neigbor.png" type="video/mp4">
+                            </video>
                     </div>
 
                     <div class="col">
@@ -615,8 +627,8 @@
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/auto.png" type="video/mp4">
-                        </video>
+                                <source src="imgs/auto.png" type="video/mp4">
+                            </video>
                     </div>
 
                     <div class="col">
@@ -659,8 +671,8 @@
                 <div class='row vspace-top'>
                     <div class="col-sm-3">
                         <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
-                            <source src="imgs/3d_face.mp4" type="video/mp4">
-                        </video>
+                                <source src="imgs/3d_face.mp4" type="video/mp4">
+                            </video>
                     </div>
 
 
@@ -755,8 +767,6 @@
             </div>
         </div>
     </div>
-
-
     <div id='footer' class='vspace-top'>
         <div>
 
@@ -764,6 +774,8 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <!-- Include all compiled plugins (below), or include individual files as needed -->
             <script src="js/bootstrap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 </body>
 
 </html>
