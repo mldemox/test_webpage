@@ -121,7 +121,7 @@
             opacity: 75%;
             display: flex;
             align-items: flex-end;
-            padding: 65px 0 170px 0;
+            padding: 50px 0 170px 0;
         }
         
         #footer {
@@ -191,9 +191,26 @@
             width: 480px;
         }
         
+        .app-line {
+            position: relative;
+        }
+        
+        .app-line:before {
+            background-color: #e7e7e7;
+            position: absolute;
+            content: "";
+            display: block;
+            width: 2px;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            z-index: -1;
+        }
+        
         .self-introduce {
             border-radius: 5px;
-            background-color: #f8f9fa;
             box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .25), inset 0 .125em .5em rgba(0, 0, 0, .15);
         }
         
@@ -237,7 +254,7 @@
     </div>
 
     <div class="self-introduce">
-        <section class="bg-light">
+        <section class="bg-light container" style="background-color: #f8f9fa;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -308,27 +325,33 @@
                                             <h4 class="title title-line text-capitalize mb-4">Educational Experience
                                             </h4>
                                         </div>
-                                        <div class="block">
-                                            <el-timeline>
-                                                <el-timeline-item timestamp="2018/4/12" placement="top">
-                                                    <el-card>
-                                                        <h4>更新 Github 模板</h4>
-                                                        <p>王小虎 提交于 2018/4/12 20:46</p>
-                                                    </el-card>
-                                                </el-timeline-item>
-                                                <el-timeline-item timestamp="2018/4/3" placement="top">
-                                                    <el-card>
-                                                        <h4>更新 Github 模板</h4>
-                                                        <p>王小虎 提交于 2018/4/3 20:46</p>
-                                                    </el-card>
-                                                </el-timeline-item>
-                                                <el-timeline-item timestamp="2018/4/2" placement="top">
-                                                    <el-card>
-                                                        <h4>更新 Github 模板</h4>
-                                                        <p>王小虎 提交于 2018/4/2 20:46</p>
-                                                    </el-card>
-                                                </el-timeline-item>
-                                            </el-timeline>
+                                        <div class="pt-4">
+                                            <div class="row">
+                                                <div class="col-md-2 d-flex justify-content-center align-items-center app-line">
+                                                    <span class="badge rounded-pill bg-primary">2021年12月31</span>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="card rounded-0 border-0 shadow my-4">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">程序更新</h5>
+                                                            <p class="card-text">Some quick example text to build on the card title and make u.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 d-flex justify-content-center align-items-center app-line">
+                                                    <span class="badge rounded-pill bg-primary">2021年12月31</span>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="card rounded-0 border-0 shadow my-4">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">程序更新</h5>
+                                                            <p class="card-text">Some quick example text to build on the card title and make u.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
