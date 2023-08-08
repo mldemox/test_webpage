@@ -14,7 +14,7 @@
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/iconfont.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/iconfont.css" rel="stylesheet" type="text/css" /> -->
 
     <!-- 引入组件库 -->
     <!-- Bootstrap CSS -->
@@ -37,10 +37,7 @@
 
     <!-- Custom Styles -->
     <style>
-        *,
-        *::after,
-        *::before {
-            box-sizing: border-box;
+        * {
             font-family: 'Times New Roman', Times, serif;
             font-size: 18px;
         }
@@ -297,21 +294,15 @@
             padding: 20px 4px 0 4px;
             background-color: #5969fe;
             z-index: 999;
-            font-size: 12px !important;
             border-radius: 3px;
-        }
-
-        .sidebar .alone-a{
-            display: block;        
-            text-decoration: none; 
-            color: white;
         }
 
         .sidebar .inner-container a {
             display: block;        
             padding: 5px 10px;         
             text-decoration: none;    
-            color: #333;        
+            color: #333;     
+            font-size: 14px !important;   
         }
 
         .sidebar .sidebar-lego{
@@ -331,8 +322,17 @@
 
         }
 
+        .alone-container{
+            padding: 2px 0;
+            font-size: 14px !important;
+            color: white;
+        }
+
+        .alone-container a{
+            font-size: 14px !important;   
+        }
         .alone-container img{
-            width: 20px;
+            width: 18px;
         }
                 
         hr {
@@ -372,7 +372,7 @@
 </head>
 
 <body>
-    <div class="sidebar" style="text-align: center;">
+    <div class="sidebar" style="text-align: center; font-size: 14px;">
         <img class="sidebar-lego" src="imgs/cart.png">
         <div class="inner-container">
             <a href="#self-introduce">Personal Details</a>
@@ -383,7 +383,7 @@
         </div>
         <div class="alone-container">
             <a herf="#self-image">Top</a>
-            <i class="iconfont">&#xe656;</i>
+            <img src="imgs/top.png"></i>
         </div>
     </div>
     <div id="fix-header">
