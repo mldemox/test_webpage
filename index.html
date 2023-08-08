@@ -246,7 +246,7 @@
         }
         
         #header {
-            margin-top: 140px;
+            margin-top: 120px;
             background-color: #f4f4f4;
             display: flex;
             align-items: flex-end;
@@ -260,7 +260,7 @@
         
         #fix-header {
             position: fixed;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             z-index: 999;
             background-color: #72aae2;
@@ -285,6 +285,26 @@
             border-width: 2px;
             box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .15);
         }
+        
+        #header .header-container {
+            width: 40%;
+            margin: 0 auto;
+        }
+        
+        #header .header-container img {
+            display: block;
+            height: 200px;
+        }
+        
+        #header .url-container {
+            text-align: center;
+            margin: auto;
+        }
+        
+        .vspace-top {
+            margin: 0;
+            padding: 20px 0;
+        }
     </style>
 </head>
 
@@ -294,14 +314,15 @@
         <p>Research Associate in Southern University of Science and Technology, China </p>
     </div>
 
-    <!-- <div id='header' style="background-image:url('imgs/home/home-shape.png')">
+    <div id='header' style="background-image:url('imgs/home/home-shape.png')">
         <div class='container'>
             <div class='row'>
                 <div class="col-sm-2 offset-sm-1">
+
                     <img id="head_icon" src="imgs/self.jpg" class='img-fluid'>
                 </div>
 
-                <div class="col">
+                <div class="col-sm-3 url-container">
                     <div id='header-text-name'>
                         Yuan Zeng
                     </div>
@@ -313,31 +334,25 @@
                         <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra">[Google
                             Scholar]</a>
                         <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[HomePage]</a>
-                        <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[Download CV]</a>
                     </div>
-
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <div id='header' style="background-image:url('imgs/home/home-shape.png')">
-        <div class='container'>
+    <!-- <div id='header' style="background-image:url('imgs/home/home-shape.png')">
+        <div class='header-container text-center'>
             <div class='row'>
                 <div class="img-container">
                     <img id="head_icon" src="imgs/self.jpg" class='img-fluid'>
                 </div>
 
-                <div class="url-container">
-                    <a href="https://github.com/mldemox">[GitHub]</a>
-                    <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra">[Google
+                <div class="url-container row">
+                    <a href="https://github.com/mldemox" class="col">[GitHub]</a>
+                    <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra" class="col">[Google
                             Scholar]</a>
-                    <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[HomePage]</a>
-                    <!-- <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[Download CV]</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
+                    <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16" class="col">[HomePage]</a>
+                   <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[Download CV]</a> -->
     <div class="self-introduce">
         <section class="bg-light" style="border-radius: 5px; background-color:#fff;">
             <div class="container">
@@ -728,6 +743,7 @@
                     </div>
         </div>
         </section> -->
+            <hr>
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
                     <img src='imgs/collaborative.png' class='img-fluid img-show'>
