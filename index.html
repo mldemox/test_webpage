@@ -249,7 +249,7 @@
             background-color: #f4f4f4;
             display: flex;
             align-items: flex-end;
-            padding: 50px 0 170px 0;
+            padding: 50px 0 150px 0;
         }
         
         .header .container {
@@ -264,7 +264,7 @@
             z-index: 999;
             background-color: #4073b4;
             width: 100%;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif !important;
             top: 0px;
         }
 
@@ -358,8 +358,7 @@
             height: 200px;
         }
         
-        .header .url-container {
-            text-align: center;
+        .self-introduce .url-container {
             margin: auto;
         }
         
@@ -368,17 +367,42 @@
             margin: 0;
             padding: 20px 0;
         }
+
+        .whole-img{
+            width: 25%;
+        }
+
+
+        .self-introduce{
+            padding-top: 200px;
+            width: 100%;
+        }
+
+        .self-introduce .message-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .self-introduce .introduce-container{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        
     </style>
 </head>
 
 <body>
-    <div class="sidebar" style="text-align: center; font-size: 14px;">
+    <div class="sidebar" style="text-align: center; font-size: 14px;" >
         <img class="sidebar-lego" src="imgs/cart.png">
         <div class="inner-container">
             <a href="#self-introduce">Personal Details</a>
             <a href="#self-education">Education Experiences</a>
             <a href="#self-research">Work Experiences</a>
-            <a href="#self-publication">Publications</a>
+            <a href="#self-publication">Published Content</a>
             <a href="#self-contract">Contact Me</a>
         </div>
         <div class="alone-container">
@@ -386,7 +410,8 @@
             <img src="imgs/top.png"></i>
         </div>
     </div>
-    <div id="fix-header">
+
+    <div id="fix-header" style="background-image:url('imgs/home-shape.png');">
         <div class="row-container">
             <h2>Yuan Zeng(曾媛)</h2>
             <p>Research Associate in Southern University of Science and Technology, China </p>
@@ -394,12 +419,11 @@
         <img src="imgs/lego.jpg">
     </div>
 
-    <div class='header' style="background-image:url('imgs/home-shape.png')" id="self-image">
+    <!-- <div class='header' id="self-image">
         <div class='container'>
             <div class='row'>
-                <div class="col-sm-2 offset-sm-1">
-
-                    <img id="head_icon" src="imgs/self.jpg" class='img-fluid'>
+                <div class="col-sm-2 offset-sm-1 whole-img">
+                    <img id="head_icon" src="imgs/whole-body.jpg" class='img-fluid'>
                 </div>
 
                 <div class="col-sm-3 url-container">
@@ -417,8 +441,31 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+    <div class="self-introduce" id="self-introduce" >
+        <div class="introduce-container container">
+            <img src="imgs/whole-body.jpg"  class='img-fluid  col-sm-2'>
+            
+            <div class="message-container">
+                <div class="col-lg-9 col-md-8" style="margin: auto;">
+                    <h4 class="heading me-2">Research Associate<span class="element text-primary" data-elements="Web Designer, Web Developer, Photographer"></span>
+                        <span id="typed" class="text-primary"></span>
+                    </h4>
+                    <p class="text-light-muted mt-2"> I'm a research assistant at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology.</a> In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern Polytechnical University.</a>                                                    In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> From 2015 to 2018, I worked as a researcher in machine
+                        learning and image restoration in Delft University of Technology. Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science
+                        and Technology. and is committed to solving practical problems by combining traditional signal processing methods and machine learning methods.</p>
+                </div>
+                <div class="url-container">
+                    <a href="https://github.com/mldemox">[GitHub]</a>
+                    <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra">[Google
+                        Scholar]</a>
+                    <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[HomePage]</a>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <!-- <div id='header' style="background-image:url('imgs/home/home-shape.png')">
         <div class='header-container text-center'>
@@ -433,7 +480,7 @@
                             Scholar]</a>
                     <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16" class="col">[HomePage]</a>
                    <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[Download CV]</a> -->
-    <div class="self-introduce" id="self-introduce" >
+    <!-- <div class="self-introduce" id="self-introduce" >
         <section class="bg-light" style="border-radius: 5px; background-color:#fff;">
             <div class="container">
                 <div class="row">
@@ -466,24 +513,16 @@
                                                     learning and image restoration in Delft University of Technology. Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science
                                                     and Technology. and is committed to solving practical problems by combining traditional signal processing methods and machine learning methods.</p>
                                             </div>
-                                            <!--end col-->
                                         </div>
-                                        <!--end row-->
                                     </div>
-                                    <!--end col-->
                                 </div>
-                                <!--end row-->
                             </div>
                         </div>
                     </div>
-                    <!--end col-->
                 </div>
-                <!--end row-->
             </div>
-            <!--end container-->
         </section>
-        <!--end section -->
-    </div>
+    </div> -->
 
     <div class="self-education" style="background-color: #f8f9fa;" id="self-education">
         <section class="cta-full">
@@ -766,7 +805,7 @@
                 <div class="col-12 text-center ">
                     <div class="container-title text-center mb-4 pb-2 ">
                         <div class="titles ">
-                            <h2 class="text-capitalize ">Publications</h2>
+                            <h2 class="text-capitalize ">Published Content</h2>
                             <span></span>
                         </div>
                     </div>
