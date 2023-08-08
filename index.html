@@ -116,14 +116,6 @@
             */
         }
         
-        #header {
-            margin-top: 140px;
-            background-color: #f4f4f4;
-            display: flex;
-            align-items: flex-end;
-            padding: 50px 0 170px 0;
-        }
-        
         #footer {
             background-color: #FFFFFF;
             padding: 60px;
@@ -252,21 +244,30 @@
             box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.3);
             width: 105%;
         }
-
-        #fix-header{
+        
+        #header {
+            margin-top: 140px;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: flex-end;
+            padding: 50px 0 170px 0;
+        }
+        
+        #fix-header {
             position: fixed;
             padding: 20px;
             text-align: center;
             z-index: 999;
             /*background-color: #72aae2;*/
             width: 100%;
-            background-image:url('imgs/home/home-shape.png');
-            top:0px;
+            background-image: url('imgs/home/home-shape.png');
+            top: 0px;
         }
-
-        #fix-header::after{
+        
+        #fix-header::after {
             content: '';
         }
+        
         hr {
             display: block;
             unicode-bidi: isolate;
@@ -285,7 +286,7 @@
 <body>
     <div id="fix-header">
         <h2>Yuan Zeng(曾媛)</h2>
-        <p>Research Associate  in Southern University of Science and Technology, China </p>
+        <p>Research Associate in Southern University of Science and Technology, China </p>
     </div>
 
     <!-- <div id='header' style="background-image:url('imgs/home/home-shape.png')">
@@ -318,25 +319,16 @@
     <div id='header' style="background-image:url('imgs/home/home-shape.png')">
         <div class='container'>
             <div class='row'>
-                <div class="col-sm-2 offset-sm-1">
+                <div class="img-container">
                     <img id="head_icon" src="imgs/self.jpg" class='img-fluid'>
                 </div>
 
-                <div class="col">
-                    <div id='header-text-name'>
-                        Yuan Zeng
-                    </div>
-                    <!-- <div id='header-text-email'>
-                        zengy3@sustech.edu.cn
-                    </div> -->
-                    <div>
-                        <a href="https://github.com/mldemox">[GitHub]</a>
-                        <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra">[Google
+                <div class="url-container">
+                    <a href="https://github.com/mldemox">[GitHub]</a>
+                    <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra">[Google
                             Scholar]</a>
-                        <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[HomePage]</a>
-                        <!-- <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[Download CV]</a> -->
-                    </div>
-
+                    <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[HomePage]</a>
+                    <!-- <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[Download CV]</a> -->
                 </div>
             </div>
         </div>
