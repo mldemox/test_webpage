@@ -263,7 +263,7 @@
             padding: 10px;
             text-align: center;
             z-index: 999;
-            background-color: #4074b4;
+            background-color: #4073b4;
             width: 100%;
             background-image: url('imgs/home-shape.png');
             font-family: 'Times New Roman', Times, serif;
@@ -280,6 +280,13 @@
         
         #fix-header::after {
             content: '';
+        }
+
+        #fix-header img{
+            width: 100px;
+            position: relative;
+            right: 10px;
+            top: 20px;
         }
         
         hr {
@@ -318,9 +325,10 @@
 </head>
 
 <body>
-    <div id="fix-header" style="background-image:url('imgs/lego.jpg')">
+    <div id="fix-header">
         <h2>Yuan Zeng(曾媛)</h2>
         <p>Research Associate in Southern University of Science and Technology, China </p>
+        <img src="imgs/lego.jpg">
     </div>
 
     <div id='header' style="background-image:url('imgs/home-shape.png')">
