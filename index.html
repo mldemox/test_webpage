@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Yuan Zeng</title>
+    <title>Yuan Zeng(曾媛)</title>
 
     <!-- Meta tags -->
     <meta charset="utf-8">
@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="imgs/">
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!-- 引入组件库 -->
@@ -25,9 +24,8 @@
     <!-- Slider -->
     <link href="css/tiny-slider.css" rel="stylesheet" />
     <!-- Main css File -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt" />
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="imgs/favicon.ico">
     <!-- Bootstrap -->
     <!-- MK Lightbox -->
     <!-- Slider -->
@@ -111,17 +109,11 @@
         #head_icon {
             display: block;
             background-color: #f4f4f4;
+            /*
             border-radius: 50% !important;
             overflow: hidden;
             position: absolute;
-        }
-        
-        #header {
-            background-color: #f4f4f4;
-            opacity: 75%;
-            display: flex;
-            align-items: flex-end;
-            padding: 50px 0 170px 0;
+            */
         }
         
         #footer {
@@ -252,37 +244,115 @@
             box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.3);
             width: 105%;
         }
+        
+        #header {
+            margin-top: 120px;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: flex-end;
+            padding: 50px 0 170px 0;
+        }
+        
+        #header .container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #fix-header {
+            position: fixed;
+            padding: 10px;
+            text-align: center;
+            z-index: 999;
+            background-color: #72aae2;
+            width: 100%;
+            background-image: url('imgs/home/home-shape.png');
+            top: 0px;
+        }
+        
+        #fix-header::after {
+            content: '';
+        }
+        
+        hr {
+            display: block;
+            unicode-bidi: isolate;
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            overflow: hidden;
+            border-style: inset;
+            border-width: 2px;
+            box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .15);
+        }
+        
+        #header .header-container {
+            width: 40%;
+            margin: 0 auto;
+        }
+        
+        #header .header-container img {
+            display: block;
+            height: 200px;
+        }
+        
+        #header .url-container {
+            text-align: center;
+            margin: auto;
+        }
+        
+        .vspace-top {
+            margin: 0;
+            padding: 20px 0;
+        }
     </style>
 </head>
 
 <body>
+    <div id="fix-header">
+        <h2>Yuan Zeng(曾媛)</h2>
+        <p>Research Associate in Southern University of Science and Technology, China </p>
+    </div>
+
     <div id='header' style="background-image:url('imgs/home/home-shape.png')">
         <div class='container'>
             <div class='row'>
                 <div class="col-sm-2 offset-sm-1">
-                    <img id="head_icon" src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=9JIiC2EAAAAJ&citpid=2" class='img-fluid'>
+
+                    <img id="head_icon" src="imgs/self.jpg" class='img-fluid'>
                 </div>
 
-                <div class="col">
+                <div class="col-sm-3 url-container">
                     <div id='header-text-name'>
                         Yuan Zeng
                     </div>
-                    <!-- <div id='header-text-email'>
+                    <div id='header-text-email'>
                         zengy3@sustech.edu.cn
-                    </div> -->
+                    </div>
                     <div>
                         <a href="https://github.com/mldemox">[GitHub]</a>
                         <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra">[Google
                             Scholar]</a>
                         <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[HomePage]</a>
-                        <!-- <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[Download CV]</a> -->
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- <div id='header' style="background-image:url('imgs/home/home-shape.png')">
+        <div class='header-container text-center'>
+            <div class='row'>
+                <div class="img-container">
+                    <img id="head_icon" src="imgs/self.jpg" class='img-fluid'>
+                </div>
+
+                <div class="url-container row">
+                    <a href="https://github.com/mldemox" class="col">[GitHub]</a>
+                    <a href="https://scholar.google.com/citations?user=9JIiC2EAAAAJ&hl=zh-CN&oi=sra" class="col">[Google
+                            Scholar]</a>
+                    <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16" class="col">[HomePage]</a>
+                   <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[Download CV]</a> -->
     <div class="self-introduce">
         <section class="bg-light" style="border-radius: 5px; background-color:#fff;">
             <div class="container">
@@ -309,10 +379,10 @@
                                     <div class="col-lg-9 col-md-8">
                                         <div class="row align-items-end">
                                             <div class="col-md-12 text-md-start mt-4 mt-sm-0">
-                                                <h4 class="heading me-2">Research Assistant Prof.<span class="element text-primary" data-elements="Web Designer, Web Developer, Photographer"></span>
+                                                <h4 class="heading me-2">Research Associate<span class="element text-primary" data-elements="Web Designer, Web Developer, Photographer"></span>
                                                     <span id="typed" class="text-primary"></span>
                                                 </h4>
-                                                <p class="text-light-muted mt-2"> I'm a research assistant professor at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology.</a> In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern Polytechnical University.</a>                                                    In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> From 2015 to 2018, I worked as a researcher in machine
+                                                <p class="text-light-muted mt-2"> I'm a research assistant at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology.</a> In 2010, I received my master's degree in signal processing from the <a href="https://dianzi.nwpu.edu.cn/">School of Electronic Information of Northwestern Polytechnical University.</a>                                                    In 2015, I received my doctorate degree in speech signal processing from <a href="https://www.tudelft.nl/en/">Delft University of Technology.</a> From 2015 to 2018, I worked as a researcher in machine
                                                     learning and image restoration in Delft University of Technology. Since 2018, he has been engaged in the research work of machine learning and signal detection and repair in Southern University of Science
                                                     and Technology. and is committed to solving practical problems by combining traditional signal processing methods and machine learning methods.</p>
                                             </div>
@@ -428,7 +498,7 @@
                 feather-navigation fea icon-md ">
                                                     <polygon points="3 11 22 2 13 21 11 13 3 11 "></polygon>
                                                 </svg> </div>
-                                            <h3 class="title mb-0 "><b>Research assistant Prof.</b></h3>
+                                            <h3 class="title mb-0 "><b>Research Associate.</b></h3>
                                             <small class="company ">Southern University of Science and Technology</small>
                                             <span class="badge skill-badge education-badge badge-light ">2017 - now</span>
                                             <p class="description text-light-muted mt-2 ">
@@ -673,6 +743,7 @@
                     </div>
         </div>
         </section> -->
+            <hr>
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
                     <img src='imgs/collaborative.png' class='img-fluid img-show'>
@@ -692,6 +763,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -712,6 +784,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -732,6 +805,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -751,7 +825,7 @@
                     </div>
                 </div>
             </div>
-
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -773,6 +847,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -792,6 +867,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -810,7 +886,7 @@
                     </div>
                 </div>
             </div>
-
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -831,6 +907,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -850,7 +927,7 @@
                     </div>
                 </div>
             </div>
-
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -870,6 +947,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -888,6 +966,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -907,6 +986,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -927,6 +1007,8 @@
                     </div>
                 </div>
             </div>
+            <hr>
+
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
                     <img src='imgs/multi-scale.png ' class='img-fluid img-show'>
@@ -945,6 +1027,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -964,6 +1047,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -983,6 +1067,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -1003,6 +1088,8 @@
                     </div>
                 </div>
             </div>
+            <hr>
+
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
                     <img src='imgs/auto.png ' class='img-fluid img-show'>
@@ -1023,6 +1110,8 @@
                     </div>
                 </div>
             </div>
+            <hr>
+
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
                     <img src='imgs/clock.png ' class='img-fluid image-show '>
@@ -1041,6 +1130,8 @@
                     </div>
                 </div>
             </div>
+            <hr>
+
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
                     <img src='imgs/speech_enhance.png ' class='img-fluid img-show '>
@@ -1059,6 +1150,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -1080,6 +1172,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -1098,6 +1191,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
 
             <div class='row vspace-top img-h'>
                 <div class="col-sm-3 ">
@@ -1119,6 +1213,8 @@
                     </div>
                 </div>
             </div>
+            <hr>
+
         </div>
         <!-- <nav aria-label="Page navigation example " style="margin-top: 20px; ">
             <ul class="pagination justify-content-center ">
