@@ -45,7 +45,7 @@
         
         body {
             font-family: 'sans-serif';
-            font-size: 16px;
+            font-size: 1.2em;
             background-color: #f8f9fa;
             color: #4F6071;
         }
@@ -245,7 +245,7 @@
             width: 105%;
         }
         
-        #header {
+        .header {
             margin-top: 120px;
             background-color: #f4f4f4;
             display: flex;
@@ -253,7 +253,7 @@
             padding: 50px 0 170px 0;
         }
         
-        #header .container {
+        .header .container {
             display: flex;
             flex-direction: column;
         }
@@ -265,7 +265,6 @@
             z-index: 999;
             background-color: #4073b4;
             width: 100%;
-            background-image: url('imgs/home-shape.png');
             font-family: 'Times New Roman', Times, serif;
             top: 0px;
         }
@@ -282,13 +281,33 @@
             content: '';
         }
 
-        #fix-header img{
-            width: 100px;
-            position: relative;
-            right: 10px;
-            top: 20px;
+        #fix-header img {
+            width: 200px;
+            position: absolute;
+            right: 0px;
+            top: -30px;
         }
-        
+
+        .sidebar {
+            position: fixed;        
+            top: 400px;                
+            left: 45px;
+            padding: 10px;                
+            background-color: #fff; 
+        }
+
+        .sidebar a {
+            display: block;        
+            padding: 10px;         
+            text-decoration: none;    
+            color: #333;        
+            }
+
+        .sidebar a:hover {
+            background-color: #ccc;   
+            color: #fff;         
+        }
+                
         hr {
             display: block;
             unicode-bidi: isolate;
@@ -302,17 +321,17 @@
             box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .15);
         }
         
-        #header .header-container {
+        .header .header-container {
             width: 40%;
             margin: 0 auto;
         }
         
-        #header .header-container img {
+        .header .header-container img {
             display: block;
             height: 200px;
         }
         
-        #header .url-container {
+        .header .url-container {
             text-align: center;
             margin: auto;
         }
@@ -325,6 +344,14 @@
 </head>
 
 <body>
+    <div class="sidebar" style="text-align: right;">
+        <a href="#self-introduce">Personal Details</a>
+        <a href="#self-education">Education Experiences</a>
+        <a href="#self-research">Work Experiences</a>
+        <a href="#self-publication">Publications</a>
+        <a href="#self-contract">Contact Me</a>
+        <a href="#self-image">Top</a>
+    </div>
     <div id="fix-header">
         <div class="row-container">
             <h2>Yuan Zeng(曾媛)</h2>
@@ -333,7 +360,7 @@
         <img src="imgs/lego.jpg">
     </div>
 
-    <div id='header' style="background-image:url('imgs/home-shape.png')">
+    <div class='header' style="background-image:url('imgs/home-shape.png')" id="self-image">
         <div class='container'>
             <div class='row'>
                 <div class="col-sm-2 offset-sm-1">
@@ -372,7 +399,7 @@
                             Scholar]</a>
                     <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16" class="col">[HomePage]</a>
                    <a href="https://eee.sustech.edu.cn/?view=5661&jsid=16">[Download CV]</a> -->
-    <div class="self-introduce">
+    <div class="self-introduce" id="self-introduce" >
         <section class="bg-light" style="border-radius: 5px; background-color:#fff;">
             <div class="container">
                 <div class="row">
@@ -424,7 +451,7 @@
         <!--end section -->
     </div>
 
-    <div class="self-education" style="background-color: #f8f9fa;">
+    <div class="self-education" style="background-color: #f8f9fa;" id="self-education">
         <section class="cta-full">
             <div class="container">
                 <div class="row position-relative ">
@@ -497,7 +524,7 @@
         <!--end section-->
     </div>
 
-    <div class="self-experience">
+    <div class="self-experience" id="self-experience">
             <section class="section container" id="resume ">
                     <div class="row justify-content-center align-items-center ">
                         <div class="col-lg-4 ">
@@ -570,7 +597,7 @@
             </section>
             <!-- end section -->
     </div>
-    <div class="self-research ">
+    <div class="self-research" id="self-research">
         <section class="section bg-light container " id="services ">
             <div class="container ">
                 <div class="row justify-content-center ">
@@ -699,7 +726,7 @@
         </section>
     </div>
 
-    <div class="self-publication" style="background-color: #fff; padding-bottom: 20px; padding-top: 30px;">
+    <div class="self-publication" id="self-publication" style="background-color: #fff; padding-bottom: 20px; padding-top: 30px;">
         <div class="container">
             <div class="row justify-content-center ">
                 <div class="col-12 text-center ">
@@ -1247,7 +1274,7 @@
         </nav> -->
     </div>
 
-    <div class="contract">
+    <div class="contract" id="self-contract">
         <section class="section pb-0 " id="contact ">
             <div class="container ">
                 <div class="row justify-content-center ">
