@@ -14,6 +14,8 @@
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css" />
+
     <!-- 引入组件库 -->
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +42,7 @@
         *::before {
             box-sizing: border-box;
             font-family: 'Times New Roman', Times, serif;
-            font-size: 16px;
+            font-size: 18px;
         }
         
         body {
@@ -292,20 +294,45 @@
             position: fixed;        
             top: 400px;                
             left: 45px;
-            padding: 10px;                
-            background-color: #fff; 
+            padding: 20px 4px 0 4px;
+            background-color: #5969fe;
+            z-index: 999;
+            font-size: 12px !important;
+            border-radius: 3px;
         }
 
-        .sidebar a {
+        .sidebar .alone-a{
             display: block;        
-            padding: 10px;         
+            text-decoration: none; 
+            color: white;
+        }
+
+        .sidebar .inner-container a {
+            display: block;        
+            padding: 5px 10px;         
             text-decoration: none;    
             color: #333;        
-            }
+        }
+
+        .sidebar .sidebar-lego{
+            width: 40px;
+            position: absolute;
+            top: -20px;
+            left: 0px;
+        }
 
         .sidebar a:hover {
-            background-color: #ccc;   
-            color: #fff;         
+            color: #0052d9;         
+        }
+
+        .sidebar .inner-container{
+            background-color: #fff !important; 
+            border-radius: 5px;
+
+        }
+
+        .alone-container img{
+            width: 20px;
         }
                 
         hr {
@@ -336,6 +363,7 @@
             margin: auto;
         }
         
+        
         .vspace-top {
             margin: 0;
             padding: 20px 0;
@@ -344,13 +372,19 @@
 </head>
 
 <body>
-    <div class="sidebar" style="text-align: right;">
-        <a href="#self-introduce">Personal Details</a>
-        <a href="#self-education">Education Experiences</a>
-        <a href="#self-research">Work Experiences</a>
-        <a href="#self-publication">Publications</a>
-        <a href="#self-contract">Contact Me</a>
-        <a href="#self-image">Top</a>
+    <div class="sidebar" style="text-align: center;">
+        <img class="sidebar-lego" src="imgs/cart.png">
+        <div class="inner-container">
+            <a href="#self-introduce">Personal Details</a>
+            <a href="#self-education">Education Experiences</a>
+            <a href="#self-research">Work Experiences</a>
+            <a href="#self-publication">Publications</a>
+            <a href="#self-contract">Contact Me</a>
+        </div>
+        <div class="alone-container">
+            <a herf="#self-image">Top</a>
+            <i class="iconfont">&#xe656;</i>
+        </div>
     </div>
     <div id="fix-header">
         <div class="row-container">
